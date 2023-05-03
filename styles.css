@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Serif&display=swap');
+
+/* ------------------------------- NAVBAR ------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+}
+
+.logo {
+    width: 30%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #001266;
+    align-items: center;
+    border-bottom: solid 1px #0A1504;
+    /* modifica posicion de sus hijos y aspecto del navbar  */
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+    margin: auto;
+}
+
+nav li {
+    margin: auto 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.burger-menu {
+    font-size: 2.5rem;
+    color: white;
+    border-radius: 4px;
+    max-height: 3rem;
+    margin-right: 1rem;
+    padding-left: 10px;
+    /*  modifica icono menu */
+}
+
+/* ------------------------------- HERO ------------------------------- */
+#hero {
+    background-color: whitesmoke;
+    position: relative;
+    /*  contenedor padre */
+}
+
+.img-fondo {
+    width: 100%;
+}
+
+.img-relative {
+    position: absolute;
+    width: 50%;
+    top: 3.5rem;
+    right: 1rem;
+}
+
+.p-hero {
+    color: white;
+    font-family: 'Roboto Serif', serif;
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    font-size: 0.4rem;
+    font-weight: 400;
+    opacity: 1.0;
+    padding-top: 1rem;
+    /* caracteristicas del parrafo  */
+}
+
+
+.button-hero {
+    position: absolute;
+    bottom: 5%;
+    left: 6%;
+    /* posicion del boton  */
+}
+
+.button-hero a {
+    font-family: 'Roboto Serif', serif;
+    font-size: 0.5rem;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    /* caracteristicas del enlace  */
+}
+
+.btn-hero {
+    font-size: 0.5rem;
+    font-weight: bold;
+    opacity: 1.0;
+    padding: 0.8rem 1.2rem;
+    color: white;
+    border: 1px solid #0A1504;
+    background-color: #0A1504;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ------------------------------- MOCKUPS ------------------------------- */
+
+/* ------------------------------- INICIO ------------------------------- */
+.title {
+    color: white;
+    font-family: 'Roboto Serif', serif;
+    position: absolute;
+    top: 3%;
+    left: 4%;
+    font-size: 2rem;
+    font-weight: 700;
+    opacity: 1.0;
+}
+
+.subtitle {
+    color: white;
+    font-family: 'Roboto Serif', serif;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 1.0;
+    padding-top: 1rem;
+}
+
+.titles {
+    display: flex;
+    color: white;
+    font-family: 'Roboto Serif', serif;
+    background-color: #7D387D;
+    width: 100vw;
+    font-size: 2.5rem;
+    font-weight: 700;
+    opacity: 1.0;
+    margin: 1rem 0;
+    padding: 0.8rem 0.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 1.0;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0.9;
+    padding: 0.8rem 1.2rem;
+    color: white;
+    border: 1px solid #8FD8A0;
+    background-color: #8FD8A0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 1;
+    background-color: #f0f0f0;
+    color: #8FD8A0;
+}
+
+/* ------------------------------- CONTACTO ------------------------------- */
+
+#contact {
+    background-color: #f8f8f8;
+    padding: 50px;
+    text-align: center;
+}
+
+#title-contact {
+    font-family: 'Roboto Serif', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    opacity: 1;
+    margin-bottom: 2rem;
+}
+
+#container-contact {
+    max-width: 25rem;
+    margin: 0 auto;
+}
+
+.contact-titles {
+    font-family: 'Roboto Serif', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    opacity: 1;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-label {
+    font-family: 'Roboto Serif', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 1;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #0A1504;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+}
+
+.btn-contact {
+    font-family: 'Roboto Serif', serif;
+    display: block;
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-weight: 700;
+    opacity: 1;
+    color: white;
+    background-color: #0A1504;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-contact:hover {
+    background-color: #aaa;
+}
+
+/* ------------------------------- FOOTER -------------------------------*/
+.footer {
+    background-color: rgba(8, 0, 77, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 0 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.icon-rd {
+    color: #fff;
+    margin: auto;
+}
+
+/* ------------------------------- BREAK DESKTOP-------------------------------*/
+@media (min-width: 768px) {
+
+    .burger-menu {
+        display: none;
+    }
+
+    nav {
+        align-items: center;
+        padding: 0.8rem;
+    }
+
+    nav ul {
+        display: block;
+        display: flex;
+    }
+
+    .logo {
+        max-width: 100px;
+        margin-right: 0.8rem;
+    }
+}
