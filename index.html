@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="/yoAnime.png" type="image/x-icon" />
+    <link rel="icon" href="/perfil.JPG" type="image/x-icon" />
     <link rel="stylesheet" href="/styles.css">
     <title>Diego Moyano | Portafolio</title>
 </head>
@@ -29,6 +29,17 @@
             </ul>
         </nav>
     </header>
+        <script>
+            const nav = document.querySelector('nav');
+            const burgerMenu = document.querySelector('.burger-menu');
+            const navList = document.querySelector('nav ul');
+          
+            burgerMenu.addEventListener('click', toggleNavList);
+          
+            function toggleNavList() {
+              navList.classList.toggle('show');
+            }
+          </script>
     <!-- ------------------------------- HERO --------------------------------->
     <main>
         <section id="hero">
@@ -49,7 +60,7 @@
         <!-------------------------- ABOUT ME-------------------------------->
         <div class="container-about">
             <img class="background-image" src="/Fondo.png" alt="">
-            <section id="setion-about">
+            <section id="section-about">
                 <h2 id="title-about">Acerca de mí</h2>
                 <p id="p-about">Llevo dos años estudiando en la universidad y en cursos adicionales. Dedico mi tiempo a
                     seguir formándome y mejorar mis habilidades. Me considero una persona ambiciosa en busca de desafíos
@@ -72,15 +83,18 @@
                 </div>
             </div>
         </section>
-        <!--------------------- SKILLSET -------------------------------->
-        <!-- <section id="section-skill">
-            <h2 id="title-skill">Acerca de mí</h2>
-            <a href="#" class="icon-rd"><i class="fa-brands fa-bootstrap"><i></a>
-            <a href="#" class="icon-rd"><i class="fa-brands fa-node"></i></a>
-            <a href="#" class="icon-rd"><i class="fa-brands fa-html5"></i></a>
-            <a href="#" class="icon-rd"><i class="fa-brands fa-css3"></i></a>
-            <a href="#" class="icon-rd"><i class="fa-brands fa-square-js"></i></a>
-        </section> -->
+<!-- --------------------- SKILLSET -------------------------------- -->
+<section id="section-skill">
+    <h2 id="title-skill">Skills</h2>
+    <div class="skillset">
+        <img class="skill-image" src="/skillset/bootstrap.png" alt="Habilidad 1">
+        <img class="skill-image" src="/skillset/css.png" alt="Habilidad 2">
+        <img class="skill-image" src="/skillset/git.png" alt="Habilidad 3">
+        <img class="skill-image" src="/skillset/js.png" alt="Habilidad 4">
+        <img class="skill-image" src="/skillset/nodejs.png" alt="Habilidad 5">
+    </div>
+</section>
+
     </main>
     <!---------------------------------  FOOTER ---------------------------- -->
     <footer class="footer">
