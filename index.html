@@ -10,7 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="/yoAnime.png" type="image/x-icon" />
     <link rel="stylesheet" href="/styles.css">
-    <title>Diego Moyano</title>
+    <title>Diego Moyano | Portafolio</title>
 </head>
 
 <body>
@@ -23,8 +23,8 @@
             </div>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#acerca-de-mi">About me</a></li>
+                <li><a href="#portfolio-section">Proyectos</a></li>
+                <li><a href="#section-about">About me</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -32,69 +32,63 @@
     <!-- ------------------------------- HERO --------------------------------->
     <main>
         <section id="hero">
-            <img class="img-fondo" src="/Fondo.png" alt="logo">
+            <video autoplay loop>
+                <source src="codeando.mp4" type="video/mp4" />
+            </video>
             <div class="container">
-                <div class="content">
-                    <h1 class="title">¡Hola! Soy Diego</h1>
-                    <h2 class="subtitle">Desarrollador full stack</h2>
-                    <p class="p-hero">descripción y habilidades</p>
-                    <div class="button-hero">
-                        <button class="btn-hero"><a href="/faqs#contact">CV</a> </button>
-                        <button class="btn-hero"> <a href="/product"> Contactame</a> </button>
-                    </div>
+                <img class="img-prog" src="/perfil.JPG" alt="">
+                <h1 class="title">¡Hi! I'am Diego Moyano</h1>
+                <hr>
+                <h2 class="subtitle">Software Developer</h2>
+                <div class="button-hero">
+                    <button class="btn-hero"><a href="/faqs#contact">CV</a> </button>
+                    <button class="btn-hero"> <a href="/product"> Contact</a> </button>
                 </div>
-                <img class="img-relative" src="/desarrollo-web.png" alt="">
             </div>
         </section>
-        <!-------------------------------- INICIO -------------------------------->
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-            <ul>
-                <li><a href="https://hoteldivine.github.io/">Proyecto 1</a></li>
-                <li><a href="">Proyecto 2</a></li>
-                <li><a href="">Proyecto 3</a></li>
-            </ul>
-        </section>
-        <div>
-
-            <section id="acerca-de-mi">
-                <h2>Acerca de mí</h2>
-                <p>Breve descripción sobre ti y tus habilidades.</p>
+        <!-------------------------- ABOUT ME-------------------------------->
+        <div class="container-about">
+            <img class="background-image" src="/Fondo.png" alt="">
+            <section id="setion-about">
+                <h2 id="title-about">Acerca de mí</h2>
+                <p id="p-about">Llevo dos años estudiando en la universidad y en cursos adicionales. Dedico mi tiempo a
+                    seguir formándome y mejorar mis habilidades. Me considero una persona ambiciosa en busca de desafíos
+                    y metas más altas en mi carrera como programador, como en mi vida</p>
             </section>
-
-            <!-- /* ------------------------------- CONTACTO ------------------------------- */ -->
-            <section id="contact">
-                <h2 id="title-contact">
-                    Contacto
-                </h2>
-                <div id="container-contact">
-                    <form>
-                        <div>
-                            <label for="InputName" class="form-label">Nombre y apellido</label>
-                            <input type="text" class="form-control" id="InputName" placeholder="Escriba su nombre..."
-                                required />
-                        </div>
-                        <div>
-                            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                placeholder="correo@ejemplo.com" required />
-                        </div>
-                        <div>
-                            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1"
-                                placeholder="Escriba aquí..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn-contact"> Enviar</button>
-                    </form>
+        </div>
+        <!--------------------------- POTFOLIO -------------------------------->
+        <section class="portfolio-section">
+            <h2 class="portfolio-title">Portfolio</h2>
+            <div class="card-container">
+                <div class="card">
+                    <a class="link" href="https://hoteldivine.github.io/"><img src="hd.svg" alt="Imagen 1"></a>
                 </div>
-            </section>
+                <div class="card">
+                    <a class="link" href="enlace2.html"><img src="gg.png" alt="Imagen 2"></a>
+                </div>
+                <div class="card">
+                    <a class="link" href="https://mercado-liebre-y2fi.onrender.com"><img src="ml.svg"
+                            alt="Imagen 3"></a>
+                </div>
+            </div>
+        </section>
+        <!--------------------- SKILLSET -------------------------------->
+        <!-- <section id="section-skill">
+            <h2 id="title-skill">Acerca de mí</h2>
+            <a href="#" class="icon-rd"><i class="fa-brands fa-bootstrap"><i></a>
+            <a href="#" class="icon-rd"><i class="fa-brands fa-node"></i></a>
+            <a href="#" class="icon-rd"><i class="fa-brands fa-html5"></i></a>
+            <a href="#" class="icon-rd"><i class="fa-brands fa-css3"></i></a>
+            <a href="#" class="icon-rd"><i class="fa-brands fa-square-js"></i></a>
+        </section> -->
     </main>
     <!---------------------------------  FOOTER ---------------------------- -->
-
     <footer class="footer">
-        <a href="" class="icon-rd"></a>
         <a href="https://www.instagram.com/diegomoyan0" class="icon-rd"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/diegomoyan0/" class="icon-rd"><i class="fa-brands fa-linkedin"></i></a>
         <a href="#" class="icon-rd"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://github.com/DiegoMoyan0" class="icon-rd"><i class="fa-brands fa-github"></i></a>
+        <a href="https://twitter.com/MoyanoDiiego" class="icon-rd"><i class="fa-brands fa-twitter"></i></a>
     </footer>
 </body>
 

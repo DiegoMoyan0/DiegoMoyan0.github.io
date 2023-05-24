@@ -9,6 +9,7 @@
 
 body {
     width: 100vw;
+    font-family: 'Roboto Serif', serif;
 }
 
 .logo {
@@ -57,219 +58,150 @@ nav a {
 
 /* ------------------------------- HERO ------------------------------- */
 #hero {
-    background-color: whitesmoke;
     position: relative;
-    /*  contenedor padre */
+    height: 100vh;
 }
 
-.img-fondo {
+video {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
-.img-relative {
+.container {
     position: absolute;
-    width: 50%;
-    top: 3.5rem;
-    right: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.p-hero {
-    color: white;
-    font-family: 'Roboto Serif', serif;
-    position: absolute;
-    top: 17%;
-    left: 5%;
-    font-size: 0.4rem;
-    font-weight: 400;
-    opacity: 1.0;
-    padding-top: 1rem;
-    /* caracteristicas del parrafo  */
+.img-prog {
+    width: 20vw;
+    border-radius: 50%;
 }
 
-
-.button-hero {
-    position: absolute;
-    bottom: 5%;
-    left: 6%;
-    /* posicion del boton  */
-}
-
-.button-hero a {
-    font-family: 'Roboto Serif', serif;
-    font-size: 0.5rem;
-    color: white;
-    list-style: none;
-    text-decoration: none;
-    /* caracteristicas del enlace  */
-}
-
-.btn-hero {
-    font-size: 0.5rem;
-    font-weight: bold;
-    opacity: 1.0;
-    padding: 0.8rem 1.2rem;
-    color: white;
-    border: 1px solid #0A1504;
-    background-color: #0A1504;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-/* ------------------------------- MOCKUPS ------------------------------- */
-
-/* ------------------------------- INICIO ------------------------------- */
 .title {
     color: white;
-    font-family: 'Roboto Serif', serif;
-    position: absolute;
-    top: 3%;
-    left: 4%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     opacity: 1.0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: white;
+    width: 60%;
+    margin: 1rem auto;
 }
 
 .subtitle {
     color: white;
-    font-family: 'Roboto Serif', serif;
-    position: absolute;
-    top: 10%;
-    left: 5%;
     font-size: 1rem;
     font-weight: 600;
     opacity: 1.0;
     padding-top: 1rem;
 }
 
-.titles {
-    display: flex;
-    color: white;
-    font-family: 'Roboto Serif', serif;
-    background-color: #7D387D;
-    width: 100vw;
-    font-size: 2.5rem;
-    font-weight: 700;
-    opacity: 1.0;
-    margin: 1rem 0;
-    padding: 0.8rem 0.5rem;
+.button-hero {
+    margin-top: 2rem;
 }
 
-p {
-    font-size: 1.2rem;
-    font-weight: 400;
-    opacity: 1.0;
+.button-hero a {
+    text-decoration: none;
+    color: white;
 }
 
-.btn {
-    display: block;
-    width: 100%;
-    font-size: 1.2rem;
-    font-weight: bold;
-    opacity: 0.9;
-    padding: 0.8rem 1.2rem;
+.btn-hero {
+    background-color: #007bff;
     color: white;
-    border: 1px solid #8FD8A0;
-    background-color: #8FD8A0;
-    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    margin-right: 1rem;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
 }
 
-.btn:hover {
-    opacity: 1;
-    background-color: #f0f0f0;
-    color: #8FD8A0;
+/* ------------------------------- ABOUT ME ------------------------------- */
+.container-about {
+    position: relative;
 }
 
-/* ------------------------------- CONTACTO ------------------------------- */
+.background-image {
+    width: 100%;
+    position: relative;
+}
 
-#contact {
-    background-color: #f8f8f8;
-    padding: 50px;
+#setion-about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+#title-about {
+    font-size: 5vw;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#p-about {
+    font-size: 2vw;
+}
+
+/* ------------------------------- PORTFOLIO ------------------------------- */
+.portfolio-section {
     text-align: center;
 }
 
-#title-contact {
-    font-family: 'Roboto Serif', serif;
-    font-size: 2.5rem;
-    font-weight: 600;
-    opacity: 1;
-    margin-bottom: 2rem;
-}
-
-#container-contact {
-    max-width: 25rem;
-    margin: 0 auto;
-}
-
-.contact-titles {
-    font-family: 'Roboto Serif', serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    opacity: 1;
-    margin-bottom: 1.5rem;
-    text-align: left;
-}
-
-.form-label {
-    font-family: 'Roboto Serif', serif;
-    font-size: 1rem;
-    font-weight: 400;
-    opacity: 1;
-    margin-bottom: 5px;
-    text-align: left;
-}
-
-.form-control {
-    width: 100%;
-    padding: 0.8rem;
+.portfolio-title {
+    font-size: 2rem;
+    font-weight: bold;
     margin-bottom: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
 }
 
-.form-control:focus {
-    outline: none;
-    border-color: #0A1504;
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.form-control::placeholder {
-    color: #aaa;
-}
-
-.btn-contact {
-    font-family: 'Roboto Serif', serif;
-    display: block;
-    width: 100%;
-    padding: 0.9rem;
-    font-size: 1rem;
-    font-weight: 700;
-    opacity: 1;
-    color: white;
-    background-color: #0A1504;
-    border: none;
-    border-radius: 5px;
+.card {
+    margin: 0 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
     cursor: pointer;
 }
 
-.btn-contact:hover {
-    background-color: #aaa;
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
 }
 
+.card:hover img {
+    transform: scale(1.1);
+}
 /* ------------------------------- FOOTER -------------------------------*/
 .footer {
-    background-color: rgba(8, 0, 77, 0.9);
-    color: #fff;
+    background-color: aliceblue;
     text-align: center;
-    padding: 0 0.7rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
 }
 
 .icon-rd {
-    color: #fff;
+    font-size: 2rem;
     margin: auto;
+    color: #001266;
 }
 
 /* ------------------------------- BREAK DESKTOP-------------------------------*/
