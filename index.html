@@ -25,7 +25,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="#portfolio-section">Portfolio</a></li>
                 <li><a href="#section-about">About me</a></li>
-                <li><a href="#contacto">Contact</a></li>
+                <li><a href="#contacto">Contact me</a></li>
             </ul>
             <script>
                 const nav = document.querySelector('nav');
@@ -44,7 +44,7 @@
     <main>
         <section id="hero">
             <div class="video-container">
-                <video src="/videos/codeando.mp4" type="video/mp4" loop autoplay muted></video>
+                <video src="/videos/codeando.mp4" type="video/mp4" loop autoplay muted playsinline></video>
             </div>
             <div class="container">
                 <img class="img-prog" src="/images/yo.png" alt="">
@@ -52,7 +52,7 @@
                 <hr id="hr-hero">
                 <h2 class="subtitle">Software Developer</h2>
                 <div class="button-hero">
-                    <button id="btn-hero">Curriculum Vitae</button>
+                    <button id="btn-hero"><i class="fa-solid fa-hand-point-down"></i> DOWNLOAD CV</button>
                 </div>
             </div>
             <script>
@@ -70,17 +70,10 @@
                 });
             </script>
         </section>
-        <!-------------------------- ABOUT ME-------------------------------->
-        <section id="section-about">
-            <h2 id="title-about">ABOUT ME</h2>
-            <hr>
-            <p id="p-about">Llevo dos años estudiando en la universidad y en cursos adicionales. Dedico mi tiempo a
-                seguir formándome y mejorar mis habilidades. Me considero una persona ambiciosa en busca de desafíos
-                y metas más altas en mi carrera como programador, como en mi vida</p>
-        </section>
+
         <!--------------------------- POTFOLIO -------------------------------->
         <section class="portfolio-section">
-            <h2 class="portfolio-title">PORTFOLIO</h2>
+            <h2 class="titles">PORTFOLIO</h2>
             <hr>
             <div class="card-container">
                 <div class="card">
@@ -96,9 +89,25 @@
                 </div>
             </div>
         </section>
+        <!-------------------------- ABOUT ME-------------------------------->
+        <section id="section-about">
+            <h2 class="titles">ABOUT ME</h2>
+            <hr>
+            <div class="container-about">
+                <div class="image-container">
+                    <img src="/images/about.jpeg" alt="">
+                </div>
+                <div class="text-container">
+                    <p id="p-about">“I have been studying at university and taking additional courses for two years. I
+                        dedicate my time to continue learning and improving my skills. I consider myself an ambitious
+                        person in search of challenges and higher goals in my career as a programmer, as well as in my
+                        life.”</p>
+                </div>
+            </div>
+        </section>
         <!-- --------------------- SKILLSET -------------------------------- -->
         <section id="section-skill">
-            <h2 id="title-skill">SKILLS</h2>
+            <h2 class="titles">SKILLS</h2>
             <hr>
             <div class="skillset">
                 <img class="skill-image" src="/images/skillset/bootstrap.png" alt="Habilidad 1">
@@ -112,13 +121,14 @@
     </main>
     <!---------------------------------  FOOTER ---------------------------- -->
     <footer class="footer">
-        <h2 id="title-footer">CONTACTAME</h2>
+        <h2 class="titles">CONTACT ME</h2>
         <hr>
+        <a href="https://api.whatsapp.com/send?phone=5491157300010" class="icon-rd"><i
+                class="fa-brands fa-whatsapp"></i></a>
         <a href="https://www.instagram.com/diegomoyan0" class="icon-rd"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/diegomoyan0/" class="icon-rd"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=5491157300010" class="icon-rd"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="https://github.com/DiegoMoyan0" class="icon-rd"><i class="fa-brands fa-github"></i></a>
         <a href="https://twitter.com/MoyanoDiiego" class="icon-rd"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/DiegoMoyan0" class="icon-rd"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/diegomoyan0/" class="icon-rd"><i class="fa-brands fa-linkedin"></i></a>
     </footer>
 </body>
 
