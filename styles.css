@@ -20,25 +20,41 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    opacity: 0.9;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #333333;
     align-items: center;
     border-bottom: solid 1px #BCD2EE;
-    /* modifica posicion de sus hijos y aspecto del navbar  */
+    position: relative;
 }
 
 nav ul {
     list-style: none;
     display: none;
     margin: auto;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    background-color: #333333;
+}
+
+nav ul.show {
+    display: flex;
+    border-bottom: solid 1px #BCD2EE;
+    border-left: solid 1px #BCD2EE;
+    height: 100vh;
+    opacity: 0.8;
 }
 
 nav li {
-    margin: auto 2rem;
+    padding: 4rem 0;
+    margin: 2rem;
+    text-align: center;
 }
 
 nav a {
@@ -51,7 +67,7 @@ nav a {
     color: white;
     border-radius: 4px;
     max-height: 3rem;
-    margin-right: 1rem;
+    margin-right: 3rem;
     padding-left: 10px;
     /*  modifica icono menu */
 }
@@ -62,11 +78,28 @@ nav a {
     height: 100vh;
 }
 
-video {
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    overflow: hidden;
+}
 
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    /* Resto de estilos para el contenido del container */
 }
 
 .container {
@@ -78,8 +111,7 @@ video {
 }
 
 .img-prog {
-    width: 20vw;
-    border-radius: 50%;
+    width: 30vw;
 }
 
 .title {
@@ -93,8 +125,17 @@ video {
 hr {
     border: none;
     height: 1px;
+    background-image: linear-gradient(to right, white, violet, white);
+    width: 70vw;
+    margin: 1rem auto;
+  }
+  
+
+#hr-hero {
+    border: none;
+    height: 1px;
     background-color: white;
-    width: 60%;
+    width: 70vw;
     margin: 1rem auto;
 }
 
@@ -116,7 +157,7 @@ hr {
     color: white;
 }
 
-.btn-hero {
+#btn-hero {
     background-color: #76E7CD;
     color: white;
     padding: 0.5rem 1rem;
@@ -127,24 +168,11 @@ hr {
 }
 
 /* ------------------------------- ABOUT ME ------------------------------- */
-.container-about {
-    position: relative;
-}
-
-.background-image {
-    width: 100%;
-    position: relative;
-}
 
 #section-about {
     font-family: 'Poppins', sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 1;
-    color: white;
+    color: black;
 }
 
 #title-about {
@@ -185,7 +213,7 @@ hr {
 }
 
 .card img {
-    width: 100%;
+    width: 70%;
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s;
@@ -210,17 +238,23 @@ hr {
 .skill-image {
     width: 80px;
     height: 80px;
-    margin: 1rem;
+    margin: 1rem 3rem;
 }
 
 /* ------------------------------- FOOTER -------------------------------*/
 .footer {
-    background-color: #f8f8f8;
     text-align: center;
     padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.footer a {
+    margin: 0 3rem;
+}
+
+#title-footer {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .icon-rd {
@@ -236,14 +270,11 @@ hr {
         display: none;
     }
 
-    nav {
-        align-items: center;
-        padding: 0.8rem;
-    }
-
     nav ul {
-        display: block;
         display: flex;
+        flex-direction: row;
+        margin: 0 3rem;
+        position: static;
     }
 
     .logo {
@@ -251,23 +282,9 @@ hr {
         margin-right: 0.8rem;
     }
 
-    #section-skill {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .skill-image {
-        margin: 1rem;
-        width: 100px;
-        height: 100px;
-    }
-
     .icon-rd {
         margin: 1rem;
     }
 
-    .footer {
-        justify-content: space-between;
-    }
+
 }
