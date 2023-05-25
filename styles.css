@@ -29,7 +29,7 @@ nav {
     justify-content: space-between;
     background-color: #4A525A;
     align-items: center;
-    border-bottom: solid 1px #8749F2;
+    border-bottom: solid 1px #24272B;
     position: relative;
 }
 
@@ -45,11 +45,11 @@ nav ul {
 
 nav ul.show {
     display: flex;
-    background-color: #160C28;
-    border-bottom: solid 1px #8749F2;
-    border-left: solid 1px #8749F2;
+    background-color: #4A525A;
+    border-bottom: solid 1px #24272B;
+    border-left: solid 1px #24272B;
     height: 100vh;
-    opacity: 0.8;
+    opacity: 0.99;
 }
 
 nav li {
@@ -93,7 +93,7 @@ nav a {
 
 .video-container video {
     min-width: 100%;
-    min-height: 100%;
+    min-height: 80%;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -125,7 +125,7 @@ hr {
     height: 1px;
     background-image: linear-gradient(to right, white, #B450CC, white);
     width: 70vw;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 
 
@@ -178,6 +178,42 @@ hr {
     margin-bottom: 1rem;
 }
 
+/* ------------------------------- PORTFOLIO ------------------------------- */
+.portfolio-section {
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    margin: 1rem auto;
+    margin-top: 0;
+    border-radius: 1rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 0 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.card img {
+    width: 70%;
+    margin: auto;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
 /* ------------------------------- ABOUT ME ------------------------------- */
 
 #section-about {
@@ -211,45 +247,11 @@ hr {
 
 #p-about {
     color: #48A9A6;
-    font-size: 2vw;
+    font-size: 2.7vw;
     padding: 10px;
 }
 
 
-/* ------------------------------- PORTFOLIO ------------------------------- */
-.portfolio-section {
-    text-align: center;
-    background-color: white;
-    width: 80%;
-    margin: 2rem auto;
-    border-radius: 1rem;
-}
-
-.card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card {
-    margin: 0 1rem;
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-}
-
-.card img {
-    width: 70%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s;
-
-}
-
-.card:hover img {
-    transform: scale(1.1);
-}
 
 /* ------------------------------- SKILLSET ------------------------------- */
 #section-skill {
@@ -266,7 +268,7 @@ hr {
 .skill-image {
     width: 80px;
     height: 80px;
-    margin: 1rem 3rem;
+    margin: 1rem 1rem;
 }
 
 /* ------------------------------- FOOTER -------------------------------*/
@@ -280,6 +282,9 @@ hr {
 
 .footer a {
     margin: 0 3rem;
+}
+.icons{
+    margin-top: 2rem;
 }
 
 .icon-rd {
