@@ -23,9 +23,9 @@
             </div>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="#portfolio-section">Portfolio</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#section-about">About me</a></li>
-                <li><a href="#contacto">Contact me</a></li>
+                <li><a href="#contact">Contact me</a></li>
             </ul>
             <script>
                 const nav = document.querySelector('nav');
@@ -58,11 +58,11 @@
             <script>
                 const btnDownload = document.getElementById('btn-hero');
                 btnDownload.addEventListener('click', () => {
-                    const fileUrl = '/CV-Moyano.pdf';
+                    const fileUrl = '/CV-Moyano Diego.pdf';
                     // Crea un enlace temporal
                     const link = document.createElement('a');
                     link.href = fileUrl;
-                    link.download = 'CV-Moyano.pdf';
+                    link.download = 'CV-Moyano Diego.pdf';
                     link.target = '_blank';
                     document.body.appendChild(link);
                     link.click();
@@ -72,7 +72,7 @@
         </section>
 
         <!--------------------------- POTFOLIO -------------------------------->
-        <section class="portfolio-section">
+        <section id="portfolio" class="portfolio-section">
             <h2 class="titles">PORTFOLIO</h2>
             <hr>
             <div class="card-container">
@@ -121,7 +121,7 @@
     </main>
     <!---------------------------------  FOOTER ---------------------------- -->
     <footer class="footer">
-        <h2 class="titles">CONTACT ME</h2>
+        <h2 id="contact" class="titles">CONTACT ME</h2>
         <hr>
         <div class="icons">
             <a href="https://api.whatsapp.com/send?phone=5491157300010" class="icon-rd"><i
