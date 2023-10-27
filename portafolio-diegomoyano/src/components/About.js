@@ -8,12 +8,22 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="">
+      <ul className="paragraph">
+        <li>Javascript</li>
         <li>Node.js</li>
+        <li>EJS</li>
         <li>Express</li>
+        <li>Git/Github</li>
+        <li>Assembler</li>
+        <li>Figma</li>
+        <li>MySQL</li>
         <li>Sequelize</li>
-        <li>JavaScript</li>
+        <li>SQL</li>
         <li>React</li>
+        <li>APIs</li>
+        <li>SCRUM</li>
+        <li>OOP</li>
+        <li>MVC</li>
       </ul>
     ),
   },
@@ -21,9 +31,10 @@ const TAB_DATA = [
     title: "Educacion",
     id: "educacion",
     content: (
-      <ul className="">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+      <ul className="paragraph">
+        <li><b>Licenciatura en Sistemas</b><br></br>Universidad Nacional General Sarmiento
+          </li> 
+        <li><b>Bachillerato</b><br></br>Colegio San Juan, Tortuguitas</li>
       </ul>
     ),
   },
@@ -31,9 +42,10 @@ const TAB_DATA = [
     title: "Certificaciones",
     id: "certificaciones",
     content: (
-      <ul className="">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+      <ul className="paragraph">
+        <li><b>Desarrollador Web Inicial</b><br></br>Argentina Programa 4.0
+          </li> 
+        <li><b>Desarrollador Web Full Stack</b><br></br>Digital House</li>
       </ul>
     ),
   },
@@ -42,7 +54,7 @@ const TAB_DATA = [
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
-  const [showImage, setShowImage] = useState(false); // Agregar estado para la animación de la imagen
+  const [showImage, setShowImage] = useState(false); 
 
   useEffect(() => {
     setShowImage(true);
@@ -63,9 +75,6 @@ const AboutSection = () => {
             alt="Description"
             className="about-image"
             style={{
-              maxWidth: "70%",
-              height: "auto",
-              borderRadius: "10%",
               opacity: showImage ? 1 : 0,
               transform: showImage ? "scale(1)" : "scale(0.9)",
               transition: "opacity 4s, transform 4s",
@@ -75,9 +84,9 @@ const AboutSection = () => {
       </div>
       <div className="text-container">
         <div>
-          <h2 className="">Sobre Mi</h2>
-          <p className="">
-          Soy un desarrollador web full stack con pasión por crear aplicaciones web interactivas y receptivas. Tengo experiencia trabajando con JavaScript, React, Node.js, Express, Sequelize, HTML, CSS y Git. Aprendo rápido y siempre busco expandir mi conocimiento y conjunto de habilidades. Soy un jugador de equipo y estoy emocionado de trabajar con otros para crear aplicaciones increíbles.          </p>
+          <h2 className="title-about">Sobre Mi</h2>
+          <p className="paragraph">
+          Soy un programador altamente motivado y hábil con una pasión por la tecnología. Tengo una  sólida  formación académica  en  informática  y  he  estado  trabajando  en proyectos personales en mi tiempo libre para desarrollar aún más mis habilidades. Estoy seguro de que tengo las habilidades y la experiencia para hacer una contribución significativa a su empresa</p>
         </div>
         <div>
           <TabButton
@@ -90,13 +99,13 @@ const AboutSection = () => {
             selectTab={() => handleTabChange("educacion")}
             active={tab === "educacion"}
           >
-            Education
+            Educacion
           </TabButton>
           <TabButton
             selectTab={() => handleTabChange("certificaciones")}
             active={tab === "certificaciones"}
           >
-            Certifications
+            Certificaciones
           </TabButton>
         </div>
         <div>

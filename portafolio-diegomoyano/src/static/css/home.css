@@ -5,6 +5,7 @@
   }
   
   .custom-button {
+text-decoration: none;
     background-image: linear-gradient(to right, #AD5389, #3C1053);
     border: 2px solid;
     border-image: linear-gradient(to right, #AD5389, #3C1053) 1 !important;

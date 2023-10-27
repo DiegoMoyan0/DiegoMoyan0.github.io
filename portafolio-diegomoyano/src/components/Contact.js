@@ -23,8 +23,8 @@ const Contact = () => {
         <div className="row">
             <div className="col-md-6 contact-info">
                 <div>
-                    <h4>Get in touch</h4>
-                    <h2>Let's work <br /> together!</h2>
+                    <h4 id='title-contact'>Contactate conmigo</h4>
+                    <h2 id='subtitle-contact'>Vamos a trabajar<br /> juntos!</h2>
                 </div>
             </div>
             <div className="col-md-6">
@@ -32,7 +32,7 @@ const Contact = () => {
                     <input className="form-input" type="text" placeholder="Tu Nombre"  name="user_name"/>
                     <input className="form-input" type="email" placeholder="Tu Email" name="user_email"/>
                     <textarea className="form-input" placeholder="Tu Mensaje" name="message"></textarea>
-                    <input type='submit' className="form-button" value="Send" />
+                    <input type='submit' className="form-button" value="Enviar" />
                 </form>
             </div>
         </div>

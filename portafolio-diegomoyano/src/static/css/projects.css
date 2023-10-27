@@ -1,5 +1,8 @@
 .project {
     background-color: #252525 !important;
+    padding: 80px 0;
+    position: relative;
+    background-color: black;
 }
 
 .project-card {
@@ -13,25 +16,15 @@
 
 .project-title {
     color: #eaeaea !important;
-    font-size: 20px;
+    font-size: 3rem;
     font-weight: bold;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-align: center;
 }
 
 .project-description {
     color: #eaeaea;
-}
-
-
-.project {
-    padding: 80px 0;
-    position: relative;
-    background-color: black;
-}
-
-.project h2 {
-    font-size: 45px;
-    font-weight: 700;
-    text-align: center;
 }
 
 .project p {
@@ -46,8 +39,8 @@
 
 .project .nav.nav-pills {
     width: 72%;
+    border-radius: 5px;
     margin: 0 auto;
-    border-radius: 50px;
     background-color: rgb(255 255 255 / 10%);
     overflow: hidden;
 }
@@ -93,26 +86,42 @@
 
 .nav-link#projects-tabs-tab-first {
     border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 55px 0px 0px 55px;
+
 }
 
 .nav-link#projects-tabs-tab-second {
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
 }
 
 .nav-link#projects-tabs-tab-third {
     border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 0 55px 55px 0;
+
 }
+.nav-link#projects-tabs-tab-four {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+.nav-link#projects-tabs-tab-five {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+.nav-link#projects-tabs-tab-six {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+} 
+
 
 .proj-imgbx {
+    display: flex;
     position: relative;
     border-radius: 30px;
     overflow: hidden;
     margin-bottom: 24px;
     height: 150px;
     width: 200px;
+    justify-content: center;
+    align-items: center;
 }
 
 .proj-imgbx img {
