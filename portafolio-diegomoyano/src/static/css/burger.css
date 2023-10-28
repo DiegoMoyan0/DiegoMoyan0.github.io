@@ -67,7 +67,7 @@
 }
 
 @media (max-width: 768px) {
-  .burger-icon {
+  .icon-container {
     width: 75vw;
   }
   
