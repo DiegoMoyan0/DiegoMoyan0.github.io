@@ -1,4 +1,5 @@
 .burger-menu-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 
 .icon{
@@ -65,16 +67,13 @@
 }
 
 @media (max-width: 768px) {
+  .burger-icon {
+    width: 75vw;
+  }
+  
   .icon-container {
     flex-wrap: wrap;
     max-width: 250px; 
   }
-  .burger-icon a {
-    width: 20px;
-    height: 20px;
-    margin: 3px; 
-  }
-  .icon{
-    font-size: 15px;
-  }
+
 }
