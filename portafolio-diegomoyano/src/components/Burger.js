@@ -31,20 +31,20 @@ const BurgerMenu = () => {
         {isOpen ? (
           <div className="icon-container">
             <a href="#home">
-              <FaHome size={24} />
+              <FaHome className='icon' />
             </a>
             <a href="#about">
-              <FaUser size={24} />
+              <FaUser className='icon' />
             </a>
             <a href="#project">
-              <FaProjectDiagram size={24} />
+              <FaProjectDiagram className='icon' />
             </a>
             <a href="#contact">
-              <FaEnvelope size={24} />
+              <FaEnvelope className='icon' />
             </a>
           </div>
         ) : (
-          <GiHamburgerMenu size={24} />
+          <GiHamburgerMenu className='icon' />
         )}
       </div>
     </div>
