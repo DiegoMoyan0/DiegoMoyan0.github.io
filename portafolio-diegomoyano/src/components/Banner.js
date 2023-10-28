@@ -70,7 +70,7 @@ const Banner = () => {
                     <Col xs={12} md={6} className="d-flex justify-content-center justify-content-md-start mb-4">
                         <a
                             className="gradient-text ref"
-                            href="/static/Moyano-Diego-CV.pdf"
+                            href={process.env.PUBLIC_URL + "/Moyano-Diego-CV.pdf"}
                             download="Moyano-Diego-CV.pdf"
                         >
                             Mi Curriculum <FaCloudDownloadAlt className='gradient-icons ml-2' size={35} />
