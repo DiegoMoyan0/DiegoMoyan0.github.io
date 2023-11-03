@@ -9,26 +9,27 @@ import mercadoliebre from '../static/img/mercadoliebre.jpeg';
 
 const Projects = () => {
   const projects = [
-    {
-      id: 2,
-      title: 'Mercado Liebre',
-      imgUrl: mercadoliebre,
-      link: 'https://mercado-liebre-y2fi.onrender.com/'
-    },
+    // {
+    //   id: 2,
+    //   title: 'Mercado Liebre',
+    //   imgUrl: mercadoliebre,
+    //   link: 'https://mercado-liebre-y2fi.onrender.com/'
+    // },
     {
       id: 3,
       title: 'Hotel Divine',
       imgUrl: hoteldivine,
       link: 'https://hoteldivine.github.io/'
     },
+    
+    // {
+    //   id: 4,
+    //   title: 'Valentino Perfumo',
+    //   imgUrl: joanvives,
+    //   link: 'https://valentino-perfumo.vercel.app/'
+    // },
     {
-      id: 4,
-      title: 'Valentino Perfumo',
-      imgUrl: joanvives,
-      link: 'https://valentino-perfumo.vercel.app/'
-    },
-    {
-      id: 6,
+      id: 5,
       title: ' Desafio Joan Vives',
       imgUrl: joanvives,
       link: 'https://www.joanvives-desafio.online/'

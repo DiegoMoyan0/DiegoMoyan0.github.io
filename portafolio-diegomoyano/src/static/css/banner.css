@@ -50,3 +50,13 @@
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(255, 0, 255, 0.8);
 }
+
+@media (max-width: 768px) {
+    #title {
+        font-size: 3rem;
+    }
+    #subtitle {
+        font-size: 2rem;
+    }
+    
+  }

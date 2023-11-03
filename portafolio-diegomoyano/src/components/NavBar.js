@@ -17,7 +17,7 @@ const NavBar = () => {
           />
         </Navbar.Brand>
         <Navbar.Collapse className="justify-content-end">
-        <a href="#contact" className="custom-button">
+        <a href="#contact" id='btn' className="custom-button">
   Trabaja conmigo
 </a>
         </Navbar.Collapse>

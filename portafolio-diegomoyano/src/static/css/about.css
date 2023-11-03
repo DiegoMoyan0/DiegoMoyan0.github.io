@@ -22,6 +22,8 @@
 
 .text-container {
   flex: 1;
+  margin-left: 10px;
+
 }
 
 .about-image {
